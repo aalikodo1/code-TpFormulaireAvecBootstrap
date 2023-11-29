@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import du css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- import du javascript bootstrap (après le chargement des éléments : defer) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>formulaire avec boostrap</title>
+</head>
+<body>
+    <!--toute mon appercu dans un container Bootstral-->
+          <div class = "container">
+                       <h1 class ="text-center fw-light fs-4">Creation de compte</h1>
+         
+                   <form  action="https://httpbin.org/post" method="POST" novalidate class ="was-validate>
+      
+                        <div class="row">        
+                          
+                            <div class ="col-12 col-md-6 col-xl-4 mt-3">
+                            <label class ="form-label" for ="name">Prénom</label>
+                            <input class ="form-control" type="text" id ="name" name="prenom" required minlength="2" maxlength="10">
+                            <div class ="invalid-feedback"> doit etre rempli et faire entre 2 et 10 caracteres </div>
+                            </div>
+                       
+                
+                   
+                           <div class ="col-12 col-md-6 col-xl-4 mt-3">
+                           <label class ="form-label" for ="name">Nom</label>
+                            <input class ="form-control" type="text" id ="name" name="nom" required minlength="1" maxlength="10">
+                             <div class ="invalid-feedback"> doit etre rempli et faire entre 2 et 10 caracteres </div>   
+                           </div>
+                    
+                           <div class ="col-12 col-md-6 col-xl-4 mt-3">
+                            <label class="form-label">Genre</label>
+                            <div class="form-check">
+                            <input class ="form-check-input" type="radio" name="genre"id="f" value="f">
+                            <label class="form-check-label" class="radio-label" for="f">féminin</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class ="form-check-input" type="radio" name="genre"id="m" value="m">
+                            <label class="form-check-label" class="radio-label" for="f">masculin</label>
+                        </div>
+                        
+                        <div class ="col-12 col-md-6 col-xl-4 mt-3">
+                            <label class ="form-label" for ="email">Email</label>
+                             <input class ="form-control" type="text" id ="email" name="email"required minlength="2" maxlength="10">
+                              <div class ="invalid-feedback"> l'email doit comporter un @</div>
+                            </div>
+                        
+                           <div class ="col-12 col-md-6 col-xl-4 mt-3">
+                                <label class ="form-label" for ="mot de passe">mot de passe</label>
+                                <input class ="form-control" type="text" id ="mot de passe" name="mot de passe" required minlength="1" maxlength="10">
+                              <div class ="invalid-feedback"> doit faire au moins 8 caracteres et comporter au moins 1 lettre majuscule, 1 lettre miniscule et 1 nombre  
+                             </div>   
+                            </div>
+                        
+                
+                
+                
+                
+                
+                
+                
+                        </div>
+            
+                </form>
+                    </form>
+           </div>
+</body>
+</html>
